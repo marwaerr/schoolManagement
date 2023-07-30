@@ -1,0 +1,18 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\modules",
+    "\\modules\\attendance",
+    "\\modules\\attendance\\views",
+    "\\modules\\attendance\\views\\employee",
+    "\\modules\\attendance\\views\\teacher",
+    "\\modules\\report",
+    "\\modules\\report\\views",
+    "\\modules\\report\\views\\tattendance",
+    "\\modules\\subscription",
+    "\\modules\\web",
+    "\\modules\\web\\views"
+  ],
+  "SelectedNode": "\\modules\\report\\views\\tattendance\\index.php",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,26 @@
+1. Backup your existing all files and database.
+
+2. Replace all files 4.5 version files with new 6.2 version files
+
+3. Update your database connection as per your database 
+    at aplication->config->database.php
+
+4.  Update following in your config file 
+    at application/config/config.php file 
+    $config['installed'] = FALSE; to $config['installed'] = TRUE;
+
+5. if your domain ssl certified then pls add https instead of http in the 
+     application->config->config.php
+    $root = "http://".$_SERVER['HTTP_HOST']; to $root = "https://".$_SERVER['HTTP_HOST'];
+
+6. Run first update_1.sql , update_2.sql and update_3.sql then update_lang.sql in you existing database from 
+    phpmyadmin
+
+7. Replace upload directory with your existing directory one by one inside
+    assets/uploads/
+
+  Note: That way your old directory will be there with uploaded resource and new directory also remain
+       Because in your directory there are some uploaded resources exists and we have newly created some directory.
+       so, all directory should be there.
+
+Thank you! 

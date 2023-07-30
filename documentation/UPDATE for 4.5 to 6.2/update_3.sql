@@ -1,0 +1,11 @@
+set sql_mode='';
+ALTER TABLE `replies` ADD `school_id` INT(11) NOT NULL AFTER `id`;
+ALTER TABLE `messages` ADD `owner_id` INT(11) NOT NULL AFTER `academic_year_id`;
+ALTER TABLE `ss_scholarships` ADD `student_id` INT(11) NOT NULL AFTER `candidate_id`;
+ALTER TABLE `book_issues` ADD `user_id` INT(11) NOT NULL AFTER `school_id`;
+ALTER TABLE `transactions` ADD `user_id` INT(11) NOT NULL AFTER `school_id`;
+ALTER TABLE `invoice_detail` ADD `user_id` INT(11) NOT NULL AFTER `school_id`;
+ALTER TABLE `item_sales` ADD `user_id` INT(11) NOT NULL AFTER `school_id`;
+ALTER TABLE `schools` ADD `is_demo` TINYINT(1) NOT NULL DEFAULT '0' AFTER `subscription_id`;
+ALTER TABLE `expenditures` ADD `user_id` INT(11) NOT NULL DEFAULT '0' AFTER `academic_year_id`;
+UPDATE `schools` SET `is_demo` = '1' WHERE `schools`.`id` = 1;
